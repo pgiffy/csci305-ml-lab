@@ -1,0 +1,53 @@
+Peter Gifford
+CSCI 305
+Spring 2018
+Lab Questions
+=======================
+1. val it = [4,2,5,2,6,10] : int list
+
+2. Function f takes all of the items contained in a list it is given and increases them all by 1 or returns an empty list if it is given an empty list.
+
+3. The line following a defines the first possible pattern for if an empty list is entered. If so, it returns an empty list. This is also the base case for the recursive call in the next line.
+
+4. The line following b defines what happens if a list is given, if so it takes the first item and increases it by one then recursively calls f on the remaining members in the list.
+
+5. val it = false : bool
+
+6.My isMember function uses tail recursion to solve the problem.
+
+7.val it =
+  Set
+    ("it",
+     Set
+       ("was",
+        Set
+          ("the",
+           Set
+             ("best",
+              Set ("of",Set ("times,",Set ("worst",Set ("times",Empty))))))))
+  : string set
+
+8. It is advantageous to use tail recursion because it saves stack space when using a recursive function. There is no longer a need to store function arguments in memory, so the storage goes from O(n) to O(1). This makes it simpler for the compiler making tail recursion more effective than non tail recursion.
+
+9. (* this is what is returned if the print_str function is not called *)
+val it = Set ("green",Set ("eggs",Set ("and",Set ("ham",Empty)))) : string set
+
+(* this is what is returned if the print_str function is called *)
+{ green eggs and ham }
+val it = () : unit
+
+10. (* this is what is returned if the print_str function is not called *)
+val it = Set ("and",Set ("macaroni",Empty)) : string set
+(* this is what is returned if the print_str function is called *)
+{ and macaroni }
+val it = () : unit
+
+11. I really liked the ability to use tail recursion so easily. While at first it was very confusing and annoying, once I got the hang of it, it made problem solving really easy and concise since there was not insane amount of variables being created to restore data.
+
+12. Creating the nested function in the list2Set function was very annoying. Maybe I didn't find any, but it felt like when dealing with lists there were very few predefined functions to do basic tasks compared to other languages. This made thinking through creating a function within a let statement the easiest thing I could think of. I also disliked the block comment system.
+
+13. I did like this lab. I liked how, at least for me, the list2Set functions was the most difficult and came at the beginning. This forced me to really understand the language, and once I got in the right mindset, it was really easy to create the last two functions.
+
+14. I spent between 3 and 4 hours working on this lab.
+
+15. Honestly I do not think that I will use ML again. I do not see a use for it in the area of CS I am trying to be part of, so unless a boss explicitly wants something written in ML for some reason, I will probably not use it again.
